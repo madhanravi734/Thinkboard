@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://thinkboard-34exhqu10-madhanravi734.vercel.app"
+        "https://thinkboard-gnlau2v11-madhanravi734.vercel.app"
     ]
 }));
 app.use(rateLimiter)
