@@ -13,12 +13,7 @@ const app=express();
 const PORT=process.env.PORT || 5001
 const __dirname=path.resolve()
 app.use(express.json())
-app.use(cors({
-    origin: [
-        "http://localhost:5173",
-        "https://thinkboard-rho.vercel.app"
-    ]
-}));
+app.use(cors());
 app.use(rateLimiter)
 app.use("/api/notes",notesRoutes)
 if(process.env.NODE_ENV==="production"){
